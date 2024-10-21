@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+</head>
+<body>
+    
+    <nav id="desktop-nav">
+        <div class="logo">Kiia Silvonen</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="extra.html">Extra</a></li>
+                <a href="#top"></a>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Kiia Silvonen</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="extra.html" onclick="toggleMenu()">Extra</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic-2.jpg" alt="Kiia Silvonen profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I am</p>
+            <h1 class="title">Kiia Silvonen</h1>
+            <p class="section__text__p2">Information Technology Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')"
+                >Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'"
+                >Contact info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/github.png" alt="My Github profile"
+                class="icon" onclick="location.href='https://github.com/KiiaS'"/>
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile"
+                class="icon" onclick="location.href='https://www.linkedin.com/in/kiia-silvonen-436550328/'"/>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Education icon"
+                        class="icon"/>
+                        <h3>Education</h3>
+                        <p>Bachelors Degree -> ongoing</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Here is supposed to be some text, but don't know yet
+                        what to write here. So, let's just write something 
+                        to fill this space.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrowDown.png" alt="Arrow icon"
+        class="icon arrow arrow-down" onclick="location.href='./#experience'"
+        />
+        <img src="./assets/arrowUp.png" alt="Arrow icon"
+        class="icon arrow arrow-up" onclick="location.href='./#top'"
+        />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon"/>
+                            <div>
+                                <h3>Java</h3>
+                                <p>Basics</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrowDown.png" alt="Arrow icon"
+        class="icon arrow arrow-down" onclick="location.href='./#projects'"
+        />
+        <img src="./assets/arrowUp.png" alt="Arrow icon"
+        class="icon arrow arrow-up" onclick="location.href='./#about'"
+        />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+
+        <table class="projects-table">
+            <thead>
+                <tr>
+                    <th>Project name</th>
+                    <th>Technologies</th>
+                    <th>More About project</th>
+                    <td><a href="#">Link to GitHub</a></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Project 1</td>
+                    <td>HTML, CSS, JavaScript</td>
+                    <td>Here is a short description of the project</td>
+                    <td><a href="#">Link to GitHub</a></td>
+                </tr>
+                <tr>
+                    <td>Project 2</td>
+                    <td>HTML, CSS, JavaScript</td>
+                    <td>Here is a short description of the project</td>
+                    <td><a href="#">Link to GitHub</a></td>
+                </tr>
+                <tr>
+                    <td>Project 3</td>
+                    <td>HTML, CSS, JavaScript</td>
+                    <td>Here is a short description of the project</td>
+                    <td><a href="#">Link to GitHub</a></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        
+
+
+        <img src="./assets/arrowDown.png" alt="Arrow icon"
+        class="icon arrow arrow-down" onclick="location.href='./#contact'"
+        />
+        <img src="./assets/arrowUp.png" alt="Arrow icon"
+        class="icon arrow arrow-up" onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon"
+                class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:exampleemail@gmail.com">Example@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon"
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/kiia-silvonen-436550328/">LinkedIn</a></p>
+            </div>
+            <!--Contact me form-->
+            <div class="form-wrapper">
+                <div class="form-container">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <!--Name-->
+                        <label for="name">Name</label>
+                        <input type="text" id="name"
+                        name="name" placeholder="Your name" required>
+                        <!--Email-->
+                        <label for="email">Email</label>
+                        <input type="email" id="email"
+                        name="email" placeholder="Your email" required>
+                        <!--Message-->
+                        <label for="message">Message</label>
+                        <textarea id="message"
+                        name="message" placeholder="Your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send</button>
+                </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="extra.html">Extra</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright things</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
