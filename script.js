@@ -95,7 +95,7 @@ function toggleMenu() {
                 //Set timer
                 setTimeout(function(){
                   alert('You succesfully found the definition of the word');
-                }, 5000);
+                }, 3000);
             })
             .catch(error => {
                 console.error('Error:', error); // Log error for better debugging
